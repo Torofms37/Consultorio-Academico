@@ -1,0 +1,34 @@
+:root {
+  --primary: #303030;
+  --secondary: #e2e2e2;
+  --terciary: #141414;
+  --border-radius: 5px;
+  --border-radius-box: 20px;
+  --title: 3em;
+  --text: .8em;
+  --button-width: 150px;
+  --button-height: 40px;
+}
+
+body {
+  background-color: var(--terciary);
+  color: var(--secondary);
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+button {
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--border-radius);
+  /* Quitar todos los estilos predeterminados */
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: var(--secondary); /* Asegura que el fondo sea transparente */
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+  font-size: var(--text);
+}
