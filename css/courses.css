@@ -5,7 +5,7 @@
   --border-radius: 5px;
   --border-radius-box: 20px;
   --title: 3em;
-  --text: .8em;
+  --text: 0.8em;
   --button-width: 150px;
   --button-height: 40px;
 }
@@ -15,11 +15,19 @@ body {
   color: var(--secondary);
   text-align: center;
 }
+section {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+}
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 button {
   width: var(--button-width);
@@ -28,7 +36,48 @@ button {
   /* Quitar todos los estilos predeterminados */
   border: 1px solid black;
   cursor: pointer;
-  background-color: var(--secondary); /* Asegura que el fondo sea transparente */
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+  background-color: var(
+    --secondary
+  ); /* Asegura que el fondo sea transparente */
   font-size: var(--text);
+}
+
+button:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  transition: all 0.15s ease-in;
+}
+
+img {
+  width: 350px;
+  height: 500px;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: var(--border-radius-box);
+}
+
+.box-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 75vh;
+  gap: 50px;
+}
+
+.box-text {
+  width: 35%;
+}
+
+.select {
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.select:hover {
+  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+  color: var(--primary);
 }
