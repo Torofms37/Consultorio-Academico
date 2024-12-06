@@ -1,13 +1,17 @@
 :root {
   --primary: #303030;
-  --secondary: #f8f6f1;
+  --secondary: #e2e2e2;
   --terciary: #141414;
-  --border-radius: 15px;
-  --title: 2.5em; 
-  --text: 1.2em;
+  --border-radius: 5px;
+  --border-radius-box: 20px;
+  --title: 3em;
+  --text: .8em;
+  --button-width: 150px;
+  --button-height: 40px;
 }
 
 body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -15,8 +19,8 @@ body {
   height: 100vh;
   background-image: url("../img/bg-img.jpg");
   background-size: cover; /* Hace que la imagen abarque todo el body */
+  background-position: center; /* Hace que la imagen se muestre en el centro */
 }
-
 body::before {
   content: "";
   position: absolute;
@@ -41,22 +45,43 @@ main {
 
 img {
   width: 250px;
+  filter: drop-shadow(0 0 10px rgba(119, 119, 119, 0.8));
 }
 
 section {
   background-color: var(--secondary);
-  width: 400px;
-  height: 200px;
-  border-radius: var(--border-radius);
+  width: 600px;
+  height: 230px;
+  border-radius: var(--border-radius-box);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  justify-content: space-around;
 }
 
 section h1 {
   padding: 0;
   margin: 0;
   font-size: var(--title);
+}
+
+button {
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--border-radius);
+  /* Quitar todos los estilos predeterminados */
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: transparent; /* Asegura que el fondo sea transparente */
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+  font-size: var(--text);
+}
+
+.button-join {
+  background-color: var(--primary);
+  filter: inherit;
+  color: var(--secondary);
+  border: 1px solid var(--primary);
 }
