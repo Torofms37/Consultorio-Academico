@@ -24,19 +24,27 @@ body {
   padding: 20px;
   width: 150px;
   height: 50px;
-  filter: drop-shadow(0 0 10px rgba(158, 158, 158, 0.9)); /* Drop-shadow inicial */
+  filter: drop-shadow(
+    0 0 10px rgba(158, 158, 158, 0.9)
+  ); /* Drop-shadow inicial */
   animation: blink-drop-shadow 3s infinite;
 }
 
 @keyframes blink-drop-shadow {
   0% {
-    filter: drop-shadow(0 0 10px rgba(158, 158, 158, 0.9)); /* Drop-shadow opaco */
+    filter: drop-shadow(
+      0 0 10px rgba(158, 158, 158, 0.9)
+    ); /* Drop-shadow opaco */
   }
   50% {
-    filter: drop-shadow(0 0 10px rgba(158, 158, 158, 0.2)); /* Drop-shadow transparente */
+    filter: drop-shadow(
+      0 0 10px rgba(158, 158, 158, 0.2)
+    ); /* Drop-shadow transparente */
   }
   100% {
-    filter: drop-shadow(0 0 10px rgba(158, 158, 158, 0.9)); /* Drop-shadow opaco */
+    filter: drop-shadow(
+      0 0 10px rgba(158, 158, 158, 0.9)
+    ); /* Drop-shadow opaco */
   }
 }
 
@@ -74,14 +82,6 @@ button:hover {
   transition: all 0.15s ease-in;
 }
 
-img {
-  width: 350px;
-  height: 500px;
-  background-size: cover;
-  object-fit: cover;
-  border-radius: var(--border-radius-box);
-}
-
 .box-info {
   display: flex;
   align-items: center;
@@ -105,4 +105,27 @@ img {
   background-color: var(--secondary);
   border: 1px solid var(--primary);
   color: var(--primary);
+}
+
+.carousel {
+  flex: 1;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+}
+.carousel-img {
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  border-radius: var(--border-radius-box);
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-img.active {
+  opacity: 1;
 }
