@@ -1,5 +1,4 @@
-// scripts.js
-
+// Carousel de imágenes en todos los cursos
 let currentIndex = 0;
 const images = document.querySelectorAll('.carousel-img');
 const imageCount = images.length;
@@ -14,3 +13,16 @@ function showNextImage() {
 }
 
 setInterval(showNextImage, 3000); // Cambia de imagen cada 3 segundos
+
+// Menú desplegable
+// scripts.js
+
+// scripts.js
+
+const menuToggle = document.querySelector('.menu-toggle');
+const menuOverlay = document.querySelector('.menu-overlay');
+
+menuToggle.addEventListener('click', () => {
+    menuOverlay.classList.toggle('active');
+    menuToggle.classList.toggle('change');
+});
