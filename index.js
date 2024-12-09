@@ -4,6 +4,9 @@ let currentIndex = 0;
 const images = document.querySelectorAll('.carousel-img');
 const imageCount = images.length;
 
+// Muestra la primera imagen inmediatamente
+images[currentIndex].classList.add('active');
+
 function showNextImage() {
     images[currentIndex].classList.remove('active');
     currentIndex = (currentIndex + 1) % imageCount;
