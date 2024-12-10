@@ -79,6 +79,7 @@ button {
   background-color: transparent; /* Asegura que el fondo sea transparente */
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
   font-size: var(--text);
+  text-decoration: none;
 }
 
 .button-join {
