@@ -1,6 +1,7 @@
 :root {
   --primary: #303030;
   --secondary: #e2e2e2;
+  --secondary-transparent: rgba(226, 226, 226, 0.8);
   --terciary: #141414;
   --border-radius: 5px;
   --border-radius-box: 20px;

@@ -1,6 +1,7 @@
 :root {
   --primary: #303030;
   --secondary: #e2e2e2;
+  --secondary-transparent: rgba(226, 226, 226, 0.5);
   --terciary: #141414;
   --border-radius: 5px;
   --border-radius-box: 20px;
@@ -49,7 +50,8 @@ img {
 }
 
 section {
-  background-color: var(--secondary);
+  background-color: var(--secondary-transparent);
+  backdrop-filter: blur(10px);
   width: 600px;
   height: 230px;
   border-radius: var(--border-radius-box);
