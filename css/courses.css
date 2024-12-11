@@ -149,6 +149,10 @@ button:hover {
   font-weight: 100;
 }
 
+.box-text h2 {
+  font-size: 1.2em;
+}
+
 .select {
   background-color: var(--primary);
   border: 1px solid var(--secondary);
