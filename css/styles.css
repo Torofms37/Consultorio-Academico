@@ -91,6 +91,7 @@ button {
 
 .button-team {
   color: var(--secondary);
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
