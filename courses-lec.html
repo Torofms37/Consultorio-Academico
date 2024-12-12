@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/courses.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/courses.css" />
+    <title>LECTOESCRITURA 📒📓</title>
   </head>
   <body>
-    <a href="./index.html"
-      ><img id="logo" src="./img//logo.png" alt="logo"
-    /></a>
-    <header><h1>NUESTROS CURSOS</h1></header>
+    <nav>
+      <a href="./index.html">
+        <img id="logo" src="./img//logo.png" alt="logo" />
+      </a>
+      <menu>
+        <input type="checkbox" id="menu" />
+        <label for="menu"> ☰ </label>
+        <ul>
+          <li><a href="./courses-comp.html">COMPUTACIÓN</a></li>
+          <li><a href="./courses-prog.html">PROGRAMACIÓN</a></li>
+          <li><a href="./courses-mat.html">MATEMÁTICAS</a></li>
+          <li class="active"><a href="./courses-lec.html">LECTOESCRITURA</a></li>
+        </ul>
+      </menu>
+    </nav>
+    <h1 class="title">NUESTROS CURSOS</h1>
     <main>
-      <section>
-        <a href="./courses-comp.html"><button>COMPUTACIÓN</button></a>
+      <section class="cursos">
+        <a href="./courses-comp.html"
+          ><button class="select">COMPUTACIÓN</button></a
+        >
         <a href="./courses-prog.html"><button>PROGRAMACIÓN</button></a>
         <a href="./courses-mat.html"><button>MATEMÁTICAS</button></a>
-        <a href="./courses-lec.html"
-          ><button class="select">LECTOESCRITURA</button></a
-        >
+        <a href="./courses-lec.html"><button>LECTOESCRITURA</button></a>
       </section>
       <sidebar class="box-info">
         <div class="box-text">
-          <h2>LECTOESCRITURA 📓📒</h2>
+          <h2>LECTOESCRITURA 📒📓</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
             excepturi ipsa rem laudantium placeat. Doloribus, libero. Unde culpa
@@ -43,7 +55,15 @@
         </div>
       </sidebar>
     </main>
-    <footer></footer>
+    <footer>
+      Consultorio Academico ©2024
+      <span> | </span>
+      <div class="social-media">
+        <a href="https://www.instagram.com/consultorioacademicoobregon/"><img src="./img//icon/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/ConsultorioAcademicoObregon"><img src="./img//icon/facebook-tag.svg" alt="Facebook"></a>
+        <a href=""><img src="./img//icon/phone.svg" alt="WhatsApp"></a>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

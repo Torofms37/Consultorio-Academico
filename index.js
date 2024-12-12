@@ -13,22 +13,3 @@ function showNextImage() {
 }
 
 setInterval(showNextImage, 3000); // Cambia de imagen cada 3 segundos
-
-// Menú desplegable
-
-const menuToggle = document.querySelector('.menu-toggle');
-const menuOverlay = document.querySelector('.menu-overlay');
-
-menuToggle.addEventListener('click', () => {
-    menuOverlay.classList.toggle('active');
-    menuToggle.classList.toggle('change');
-    document.body.classList.toggle('overlay-active');
-});
-
-menuOverlay.addEventListener('click', (event) => {
-    if (event.target === menuOverlay) {
-        menuOverlay.classList.remove('active');
-        menuToggle.classList.remove('change');
-        document.body.classList.remove('overlay-active');
-    }
-});
