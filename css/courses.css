@@ -22,6 +22,8 @@ body {
 
 .icon-contact {
   position: fixed;
+  width: 50px;
+  height: 50px;
   top: 50%;
   right: 0;
   background-color: var(--secondary);
@@ -193,7 +195,7 @@ button:hover {
 
 .carousel img {
   position: absolute;
-  width: 450px;
+  width: 100%;
   height: 500px;
   border-radius: var(--border-radius-box);
   object-fit: cover;
