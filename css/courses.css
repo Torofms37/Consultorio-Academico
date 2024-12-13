@@ -22,12 +22,13 @@ body {
 
 .icon-contact {
   position: fixed;
-  width: 50px;
-  height: 50px;
-  top: 50%;
-  right: 0;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 10px;
   background-color: var(--secondary);
   border-radius: 25%;
+  opacity: 0.5;
 }
 
 /* Logo y menú */
@@ -84,18 +85,12 @@ li a {
   text-decoration: none;
 }
 
-@media (max-width: 425px) {
-  nav {
-    justify-content: flex-end;
-  }
-}
 
 #logo {
   width: 150px;
   filter: drop-shadow(0 0 10px rgba(158, 158, 158, 0.9));
   animation: blink-drop-shadow 3s infinite;
 }
-
 @keyframes blink-drop-shadow {
   0% {
     filter: drop-shadow(0 0 10px rgba(158, 158, 158, 0.9));
@@ -108,11 +103,16 @@ li a {
   }
 }
 
+
 .buttons {
   display: flex;
   width: 100%;
   gap: 30px;
   justify-content: center;
+}
+
+.title {
+  margin: 0;
 }
 
 main {
@@ -150,25 +150,30 @@ button:hover {
   transition: all 0.15s ease-in;
 }
 
+.cursos {
+  display: none;
+}
+
 .box-info {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  height: 70vh;
-  gap: 50px;
+  width: 90%;
   font-size: var(--text);
 }
 
 .box-text {
-  width: 45%;
+  width: auto;
 }
 
 .box-text p {
   font-weight: 100;
+  font-size: .7em;
 }
 
 .box-text h2 {
+  margin: 0;
   font-size: 1.2em;
 }
 
@@ -187,7 +192,6 @@ button:hover {
 .carousel {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex: 1;
   position: relative;
   width: 100%;
@@ -196,7 +200,7 @@ button:hover {
 .carousel img {
   position: absolute;
   width: 100%;
-  height: 500px;
+  height: 300px;
   border-radius: var(--border-radius-box);
   object-fit: cover;
   opacity: 0;
@@ -212,9 +216,10 @@ button:hover {
 }
 
 footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+  position: fixed; /* Cambio de absolute a fixed para mantener el footer en la parte inferior sin desbordamiento */
+  left: 0; /* Asegura que el footer comience desde el borde izquierdo */
+  right: 0; /* Asegura que el footer termine en el borde derecho */
+  bottom: 0; /* Mantiene el footer en la parte inferior */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,9 +228,13 @@ footer {
   font-weight: 300;
   gap: 10px;
   color: var(--terciary);
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.55));
+  background-color: var(--secondary-transparent);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--secondary);
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .box-info {
     width: 90%;
   }
@@ -251,7 +260,7 @@ footer {
 @media (max-width: 425px) {
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   menu {
     display: block;
@@ -301,4 +310,4 @@ footer {
   .box-text p {
     font-size: 0.7em;
   }
-}
+} */
