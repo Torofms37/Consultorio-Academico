@@ -13,11 +13,19 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--terciary);
   color: var(--secondary);
   text-align: center;
   transition: background-color 1s ease-in-out;
+}
+
+.icon-contact {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  background-color: var(--secondary);
+  border-radius: 25%;
 }
 
 /* Logo y menú */
@@ -76,7 +84,7 @@ li a {
 
 @media (max-width: 425px) {
   nav {
-      justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
 
@@ -268,7 +276,7 @@ footer {
   .box-text {
     width: 95%;
     font-weight: 100;
-    font-size: .7em;
+    font-size: 0.7em;
   }
 
   .box-text h2 {
