@@ -33,9 +33,7 @@ body {
 
 /* Logo y menú */
 nav {
-    /* width: 100%; */
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     /* padding: 10px 20px; */
@@ -104,7 +102,6 @@ li a {
     filter: drop-shadow(0 0 10px rgba(158, 158, 158, 0.9));
   }
 }
-
 
 .buttons {
   display: flex;
@@ -175,7 +172,7 @@ button:hover {
 
 .box-text p {
   font-weight: 100;
-  font-size: .7em;
+  font-size: .6em;
 }
 
 .box-text h2 {
@@ -206,7 +203,7 @@ button:hover {
 .carousel img {
   position: absolute;
   width: 100%;
-  height: 300px;
+  height: 250px;
   border-radius: var(--border-radius-box);
   object-fit: cover;
   opacity: 0;
@@ -222,10 +219,10 @@ menu {
 }
 
 footer {
-  position: fixed; /* Cambio de absolute a fixed para mantener el footer en la parte inferior sin desbordamiento */
-  left: 0; /* Asegura que el footer comience desde el borde izquierdo */
-  right: 0; /* Asegura que el footer termine en el borde derecho */
-  bottom: 0; /* Mantiene el footer en la parte inferior */
+  position: fixed;
+  left: 0; 
+  right: 0;
+  bottom: 0; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,6 +261,9 @@ footer {
   .cursos {
     display: block;
     margin: 10px;
+  }
+  .cursos a {
+    margin-right: 5px;
   }
 }
 @media (min-width: 1024px) {
