@@ -50,7 +50,7 @@ footer {
 
 .info {
   background: var(--terciary);
-  padding: 20px;
+  padding: 10px;
   border: 1px solid var(--secondary);
   border-radius: 10px;
   color: var(--secondary);
@@ -59,8 +59,8 @@ footer {
 .map {
   border-radius: 15px;
   margin: 15px;
-  width: 400px;
-  height: 250px;
+  width: 95%;
+  height: 70%;
 }
 
 form {
@@ -73,13 +73,12 @@ label, input, textarea, button {
   padding: 10px;
 }
 
-
-
 @media (max-width: 768px) {
   .container {
       grid-template-columns: 1fr;
   }
   .map {
     width: 95%;
+    height: auto;
   }
 }
