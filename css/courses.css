@@ -172,7 +172,7 @@ button:hover {
 
 .box-text p {
   font-weight: 100;
-  font-size: .6em;
+  font-size: .7em;
 }
 
 .box-text h2 {
@@ -250,7 +250,7 @@ footer {
   }
   .carousel img {
     width: 500px;
-    height: 400px;
+    height: 350px;
   }
   .buttons {
     gap: 25px;
@@ -264,6 +264,9 @@ footer {
   }
   .cursos a {
     margin-right: 5px;
+  }
+  .box-text p {
+    font-size: .8em;
   }
 }
 @media (min-width: 1024px) {
