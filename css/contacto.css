@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100vh;
   background-color: var(--primary);
@@ -71,6 +71,11 @@ main {
   box-sizing: border-box;
 }
 
+.container-info {
+  display: flex;
+  justify-content: center;
+}
+
 .info {
   background: var(--terciary);
   padding: 10px;
@@ -112,6 +117,18 @@ main {
   margin-top: 10px;
 }
 
+.ceo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ceo {
+  width: 150px;
+  border-radius: var(--border-radius);
+}
+
 .number-contact {
   text-decoration: none;
   color: #135d2e;
@@ -131,7 +148,8 @@ main {
   .info1 {
     margin-bottom: 20px;
   }
-  .info3, .info4 {
+  .info3,
+  .info4 {
     grid-column: 1 / -1;
   }
 }
@@ -139,11 +157,11 @@ main {
 /* Media queries para diseño en pantallas medianas y grandes */
 @media (min-width: 720px) {
   .container {
-    grid-template-columns: 2fr 1fr; /* Configura dos columnas, con la primera más ancha */
-    grid-template-rows: 300px 300px; /* Configura dos filas automáticas */
-    grid-template-areas: 
-      "mision mision"
-      "mapa redes-sociales"; /* Distribución de áreas */
+    grid-template-columns: 1fr 1fr; /* Configura dos columnas, con la primera más ancha */
+    grid-template-rows: 1fr 1fr; /* Configura dos filas automáticas */
+    grid-template-areas:
+      "mision mapa"
+      "mision redes-sociales";
   }
 
   .info1 {
@@ -164,6 +182,9 @@ main {
   .map-container {
     width: 100%;
     height: 90%; /* Ajusta la altura según tus necesidades para pantallas grandes */
+  }
+  .ceo-container img {
+    width: 50%;
   }
 }
 

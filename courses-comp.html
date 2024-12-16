@@ -7,10 +7,11 @@
     <title>Computación 💻</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <a href="./index.html">
         <img id="logo" src="./img//logo.png" alt="logo" />
       </a>
+      <h1 class="title">NUESTROS CURSOS</h1>
       <menu>
         <input type="checkbox" id="menu" />
         <label for="menu"> ☰ </label>
@@ -18,20 +19,18 @@
           <li class="active"><a href="./courses-comp.html">COMPUTACIÓN</a></li>
           <li><a href="./courses-prog.html">PROGRAMACIÓN</a></li>
           <li><a href="./courses-mat.html">MATEMÁTICAS</a></li>
-          <li><a href="./courses-lec.html">LECTOESCRITURA</a></li>
+          <li class="last-item"><a href="./courses-lec.html">LECTOESCRITURA</a></li>
         </ul>
       </menu>
+      <div class="nav-spacer"></div> <!-- Espaciador Invisible -->
     </nav>
     <a href="./contact.html">
       <img class="icon-contact" src="./img/icon/forward-message.svg" alt=""/>
     </a>
-    <h1 class="title">NUESTROS CURSOS</h1>
     <hr class="divider">
     <main>
       <section class="cursos">
-        <a href="./courses-comp.html"
-          ><button class="select">COMPUTACIÓN</button></a
-        >
+        <a href="./courses-comp.html"><button class="select">COMPUTACIÓN</button></a>
         <a href="./courses-prog.html"><button>PROGRAMACIÓN</button></a>
         <a href="./courses-mat.html"><button>MATEMÁTICAS</button></a>
         <a href="./courses-lec.html"><button>LECTOESCRITURA</button></a>
@@ -60,15 +59,11 @@
       </sidebar>
     </main>
     <footer>
-      Consultorio Academico ©2024
+      Consultorio Académico ©2024
       <div class="social-media">
-        <a href="https://www.instagram.com/consultorioacademicoobregon/"
-          ><img src="./img//icon/instagram.svg" alt="Instagram"
-        /></a>
-        <a href="https://www.facebook.com/ConsultorioAcademicoObregon"
-          ><img src="./img//icon/facebook-tag.svg" alt="Facebook"
-        /></a>
-        <a href=""><img src="./img//icon/phone.svg" alt="WhatsApp" /></a>
+        <a href="https://www.instagram.com/consultorioacademicoobregon/"><img src="./img//icon/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/ConsultorioAcademicoObregon"><img src="./img//icon/facebook-tag.svg" alt="Facebook"></a>
+        <a href=""><img src="./img//icon/phone.svg" alt="WhatsApp"></a>
       </div>
     </footer>
     <script src="./index.js"></script>
