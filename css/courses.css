@@ -33,13 +33,14 @@ body {
 
 /* Logo y menú */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 10px 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 20px; */
 }
 
 label {
+  visibility: visible;
   box-sizing: border-box;
   display: inline-block;
   border: 1px solid var(--secondary);
@@ -84,9 +85,14 @@ li a {
   text-decoration: none;
 }
 
+h6 {
+  text-align: left;
+  margin: 5px 0 25px 0;
+  font-weight: 400;
+}
 
 #logo {
-  width: 150px;
+  width: 80px;
   filter: drop-shadow(0 0 10px rgba(158, 158, 158, 0.9));
   animation: blink-drop-shadow 3s infinite;
 }
@@ -122,8 +128,12 @@ main {
   box-sizing: border-box;
 }
 
-menu {
-  display: none;
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
   width: 30px;
   height: 30px;
   top: 10px;
@@ -170,8 +180,9 @@ button:hover {
 }
 
 .box-text p {
+  text-align: justify;
   font-weight: 100;
-  font-size: .6em;
+  font-size: 0.9em;
 }
 
 .box-text h2 {
@@ -191,37 +202,52 @@ button:hover {
   color: var(--primary);
 }
 
-.carousel {
+.carousel-container {
+  width: 90%;
+  height: 300px; /* Ajuste de altura según la ventana gráfica */
   display: flex;
   justify-content: center;
-  flex: 1;
+  align-items: center;
+  overflow: hidden;
   position: relative;
+  border-radius: var(--border-radius-box);
+}
+
+.carousel {
+  display: flex;
+  transition: transform 1s ease-in-out;
   width: 100%;
+  height: 100%;
 }
 
 .carousel img {
-  position: absolute;
   width: 100%;
-  height: 250px;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin recortarse */
+  flex-shrink: 0;
   border-radius: var(--border-radius-box);
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
 }
 
-.carousel-img.active {
-  opacity: 1;
+.divider {
+  width: 70%;
 }
 
-menu {
-  display: block
+.mat-info h2{
+  margin: 0;
+  font-size: 1.2em;
 }
+.mat-info p{
+  text-align: justify;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
 
 footer {
   position: fixed;
-  left: 0; 
+  left: 0;
   right: 0;
-  bottom: 0; 
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,7 +261,11 @@ footer {
   backdrop-filter: blur(10px);
   border-top: 1px solid var(--secondary);
 }
+
 @media (min-width: 768px) {
+  #logo {
+    width: 100px;
+  }
   .divider {
     width: 70%;
   }
@@ -248,14 +278,15 @@ footer {
     width: 70%;
   }
   .carousel img {
-    width: 500px;
-    height: 350px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
   }
   .buttons {
     gap: 25px;
   }
-  menu {
-    display: none;
+  .menu {
+    visibility: hidden;
   }
   .cursos {
     display: block;
@@ -265,75 +296,26 @@ footer {
     margin-right: 5px;
   }
   .box-text p {
-    font-size: .8em;
-  }
-}
-@media (min-width: 1024px) {
-  .divider {
-    width: 60%;
-  }
-  .box-info {
-    width: 50%;
-  }
-  .box-text {
-    font-size: 1.1em;
-  }
-  .carousel img {
-    width: 500px;
-    height: 360px;
-  }
-}
-
-
-
-/* @media (max-width: 425px) {
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  .cursos {
-    display: none;
-  }
-  #logo {
-    width: 100px;
-  }
-  .buttons {
-    display: none;
-  }
-
-  .title {
-    font-size: 1.5em;
-  }
-
-  .box-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-  }
-  .box-text {
-    width: 95%;
-    font-weight: 100;
-    font-size: 0.7em;
-  }
-
-  .box-text h2 {
-    font-size: 1.2em;
-  }
-
-  .carousel img {
-    width: 300px;
-    height: 300px;
-    gap: 10px;
-  }
-  .box-text p {
     font-size: 0.8em;
   }
 }
-@media (max-width: 320px) {
-  .box-text {
-    width: 95%;
+@media (min-width: 1024px) {
+  .box-info {
+    width: 50%;
   }
-  .box-text p {
-    font-size: 0.7em;
+
+  .box-info p {
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: 200;
   }
-} */
+
+  .carousel img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+}
