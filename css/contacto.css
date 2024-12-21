@@ -130,6 +130,8 @@ h3 {
   height: 35px;
   object-fit: cover;
   margin-top: 10px;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.55));
+
 }
 
 .ceo-container {
@@ -140,8 +142,9 @@ h3 {
 }
 
 .ceo {
-  width: 150px;
+  width: 80%;
   border-radius: var(--border-radius);
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.55));
 }
 
 .number-contact {
@@ -153,6 +156,8 @@ h3 {
   width: 100%;
   height: 60%;
   object-fit: contain;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.55));
+
 }
 
 .social-media .whatsapp img {
@@ -204,7 +209,9 @@ h3 {
     height: 90%; /* Ajusta la altura según tus necesidades para pantallas grandes */
   }
   .ceo-container img {
-    width: 70%;
+    width: 75%;
+    height: 180px;
+    object-fit: cover;
   }
 }
 
@@ -213,11 +220,13 @@ h3 {
     grid-template-rows: 350px 350px; /* Configura dos filas automáticas */
   }
   .ceo-container img {
-    width: 60%;
+    width: 75%;
+    height: 280px;
   }
 }
-@media (min-width: 1024px) {
+
+@media (min-width: 1280px) {
   .ceo-container img {
-    width: 55%;
+    height: 380px;
   }
 }

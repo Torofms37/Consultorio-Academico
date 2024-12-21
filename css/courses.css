@@ -146,6 +146,11 @@ h4 {
   color: var(--terciary);
 }
 
+ul li:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
 button {
   width: var(--button-width);
   height: var(--button-height);
@@ -304,13 +309,16 @@ footer {
   .box-info {
     width: 50%;
   }
-
+  .box-text h2{
+    font-size: 1.3em;
+  }
+  
   .box-info p {
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 200;
   }
-
+  
   .carousel img {
     object-fit: cover;
     width: 100%;
@@ -319,4 +327,7 @@ footer {
 }
 
 @media (min-width: 1280px) {
+  .box-text h2{
+    font-size: 1.5em;
+  }
 }
