@@ -83,6 +83,7 @@ main {
   border-radius: 10px;
   color: var(--secondary);
   font-weight: 100;
+  font-size: 1.3em;
 }
 
 .info p {
@@ -226,7 +227,10 @@ h3 {
 }
 
 @media (min-width: 1280px) {
+  .container {
+    grid-template-rows: 45% 45%;
+}
   .ceo-container img {
-    height: 380px;
+    height: 450px;
   }
 }

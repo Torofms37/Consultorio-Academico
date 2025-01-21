@@ -19,6 +19,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: var(--primary);
+  background-image: url("../img/bg.png");
   color: var(--secondary);
   background-size: cover;
   background-position: center;
