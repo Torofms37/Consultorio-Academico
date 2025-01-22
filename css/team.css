@@ -58,18 +58,20 @@ nav h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  filter: drop-shadow(0 0 10px rgba(19, 19, 19, 0.9));
+}
+
+.container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0 20px 0px;
 }
 
 h2 {
   text-align: center;
   font-size: 1.4em;
   margin: 5px;
-}
-.profesor img {
-  width: 200px;
-  height: 200px;
-  clip-path: circle(50%);
-  object-fit: cover;
 }
 .profesor {
   display: flex;
@@ -78,6 +80,15 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  background-color: rgba(226, 226, 226, 0.2);
+  border-radius: var(--border-radius-box);
+
+}
+.profesor img {
+  width: 200px;
+  height: 200px;
+  clip-path: circle(50%);
+  object-fit: cover;
 }
 
 .profesor p {
@@ -91,7 +102,8 @@ h2 {
 }
 
 .divider {
-  width: 55%;
+  width: 90%;
+  display: inherit;
 }
 
 footer {
@@ -114,6 +126,12 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .divider {
+    width: 55%;
+  }
+}
+
+@media (min-width: 768px) {
   #logo {
     width: 50px;
   }
@@ -130,5 +148,14 @@ footer {
     height: 250px;
     clip-path: circle(50%);
     object-fit: cover;
+  }
+}
+
+@media (min-width: 1440px) {
+  .profesor  {
+    width: 35%;
+  }
+  .divider {
+    width: 30%;
   }
 }

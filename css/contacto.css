@@ -86,8 +86,9 @@ main {
   font-size: 1.3em;
 }
 
-.info p {
+.info, .info1 {
   font-weight: 100;
+  font-size: 1em;
 }
 
 .info4 {
@@ -211,7 +212,7 @@ h3 {
   }
   .ceo-container img {
     width: 75%;
-    height: 180px;
+    height: 240px;
     object-fit: cover;
   }
 }
