@@ -221,7 +221,7 @@ button:hover {
 
 .carousel-container {
   width: 90%;
-  height: 300px; /* Ajuste de altura según la ventana gráfica */
+  height: 500px; /* Ajuste de altura según la ventana gráfica */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +296,7 @@ footer {
   }
   .carousel img {
     width: 100%;
-    height: 300px;
+    height: 700px;
     object-fit: cover;
   }
   .buttons {
@@ -333,12 +333,17 @@ footer {
   .carousel img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 800px;
   }
 }
 
 @media (min-width: 1280px) {
   .box-text h2{
     font-size: 1.5em;
+  }
+  .carousel img {
+    object-fit: cover;
+    width: 100%;
+    height: 800px;
   }
 }
